@@ -5,5 +5,14 @@
             "name": "Artur Wolny",
             "email": "artur.wolny@rst.com.pl"
         }
-    ]
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "sensiolabs/consul-php-sdk": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "RstGroup\\PhpConsulConfigProvider\\": "src/"
+        }
+    }
 }
