@@ -1,0 +1,9 @@
+{
+    "name": "rstgroup/php-consul-config-provider",
+    "authors": [
+        {
+            "name": "Artur Wolny",
+            "email": "artur.wolny@rst.com.pl"
+        }
+    ]
+}
