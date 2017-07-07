@@ -25,7 +25,7 @@ final class ConfigProvider implements ConfigProviderInterface
     {
         /** @var ConsulResponse $response */
         $response = $this->consulKeyValueService->get($prefix, [
-            'recurse'
+            'recurse' => true
         ]);
 
         if ($response->getStatusCode() == 200) {
