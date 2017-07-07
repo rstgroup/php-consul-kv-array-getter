@@ -6,5 +6,9 @@ namespace RstGroup\PhpConsulConfigProvider;
 
 interface ConfigProviderInterface
 {
-    public function getConfig(string $prefix) : array;
+    /**
+     * @param string $prefix
+     * @return array
+     */
+    public function getConfig($prefix);
 }

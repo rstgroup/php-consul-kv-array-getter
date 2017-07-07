@@ -6,7 +6,11 @@ namespace RstGroup\PhpConsulConfigProvider\Consul\Helper;
 
 final class ConsulJsonToArrayMapper
 {
-    public function map(array $consulRecord) : array
+    /**
+     * @param array $consulRecord
+     * @return array
+     */
+    public function map(array $consulRecord)
     {
         return $this->mapDirectories(
             $consulRecord['Key'],
@@ -14,18 +18,23 @@ final class ConsulJsonToArrayMapper
         );
     }
 
-    private function mapDirectories(string $key, string $value = null) : array
+    /**
+     * @param string      $key
+     * @param string|null $value
+     * @return array
+     */
+    private function mapDirectories($key, $value = null)
     {
         $dirs = explode('/', $key);
         // get rid of last exploded item
         $valueKey = array_pop($dirs);
 
-        $result = [];
+        $result  = [];
         $pointer = &$result;
 
-        foreach($dirs as $nestedDirectory) {
+        foreach ($dirs as $nestedDirectory) {
             $pointer[$nestedDirectory] = [];
-            $pointer = &$pointer[$nestedDirectory];
+            $pointer                   = &$pointer[$nestedDirectory];
         }
 
         if (!empty($valueKey) && $value !== null) {

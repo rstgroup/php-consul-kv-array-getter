@@ -20,7 +20,8 @@ final class ConfigProvider implements ConfigProviderInterface
         $this->consulKeyValueService = $service;
     }
 
-    public function getConfig(string $prefix): array
+    /** @inheritdoc */
+    public function getConfig($prefix)
     {
         /** @var ConsulResponse $response */
         $response = $this->consulKeyValueService->get($prefix, [
