@@ -4,13 +4,13 @@
 namespace RstGroup\PhpConsulConfigProvider\Consul;
 
 
-use RstGroup\PhpConsulConfigProvider\ConfigProviderInterface;
+use RstGroup\PhpConsulConfigProvider\ConsulArrayGetterInterface;
 use RstGroup\PhpConsulConfigProvider\Consul\Helper\ConsulJsonToArrayMapper;
 use SensioLabs\Consul\ConsulResponse;
 use SensioLabs\Consul\Services\KVInterface;
 
 
-final class ConfigProvider implements ConfigProviderInterface
+final class ConsulArrayGetter implements ConsulArrayGetterInterface
 {
     /** @var KVInterface */
     private $consulKeyValueService;
@@ -21,7 +21,7 @@ final class ConfigProvider implements ConfigProviderInterface
     }
 
     /** @inheritdoc */
-    public function getConfig($prefix)
+    public function getByPrefix($prefix)
     {
         /** @var ConsulResponse $response */
         $response = $this->consulKeyValueService->get($prefix, [

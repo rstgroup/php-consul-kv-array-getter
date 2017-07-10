@@ -4,11 +4,11 @@
 namespace RstGroup\PhpConsulConfigProvider;
 
 
-interface ConfigProviderInterface
+interface ConsulArrayGetterInterface
 {
     /**
      * @param string $prefix
      * @return array
      */
-    public function getConfig($prefix);
+    public function getByPrefix($prefix);
 }

@@ -7,11 +7,11 @@ namespace RstGroup\PhpConsulConfigProvider\Tests\Consul;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Psr7\Response;
 use PHPUnit\Framework\TestCase;
-use RstGroup\PhpConsulConfigProvider\Consul\ConfigProvider;
+use RstGroup\PhpConsulConfigProvider\Consul\ConsulArrayGetter;
 use SensioLabs\Consul\Services\KV;
 
 
-class ConfigProviderTest extends TestCase
+class ConsulArrayGetterTest extends TestCase
 {
     /**
      * @dataProvider consulResponseProvider
@@ -30,11 +30,11 @@ class ConfigProviderTest extends TestCase
         ));
 
         //
-        $configProvider = new ConfigProvider($kvService);
+        $configProvider = new ConsulArrayGetter($kvService);
 
 
         // when: retrieving config
-        $config = $configProvider->getConfig('application');
+        $config = $configProvider->getByPrefix('application');
 
         // then
         $this->assertEquals($expectedConfig, $config);

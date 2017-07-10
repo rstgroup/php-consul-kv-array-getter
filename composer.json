@@ -1,5 +1,6 @@
 {
-    "name": "rstgroup/php-consul-config-provider",
+    "name": "rstgroup/php-consul-kv-array-getter",
+    "description": "This library allows you to receive the consul's KV Store's keys as a structured array.",
     "authors": [
         {
             "name": "Artur Wolny",
@@ -10,10 +11,11 @@
     "prefer-stable": true,
     "require": {
         "sensiolabs/consul-php-sdk": "dev-master",
-        "php": ">= 5.6",
-        "phpunit/phpunit": "^5.7"
+        "php": ">= 5.6"
+
     },
     "require-dev": {
+        "phpunit/phpunit": "^5.7"
     },
     "autoload": {
         "psr-4": {
