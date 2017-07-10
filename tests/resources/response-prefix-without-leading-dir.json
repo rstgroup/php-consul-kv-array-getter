@@ -1,0 +1,42 @@
+[
+    {
+        "LockIndex": 0,
+        "Key": "application/",
+        "Flags": 0,
+        "Value": null,
+        "CreateIndex": 11,
+        "ModifyIndex": 11
+    },
+    {
+        "LockIndex": 0,
+        "Key": "application/cache/",
+        "Flags": 0,
+        "Value": null,
+        "CreateIndex": 14,
+        "ModifyIndex": 14
+    },
+    {
+        "LockIndex": 0,
+        "Key": "application/cache/uri",
+        "Flags": 0,
+        "Value": "aHR0cDovL2xvY2FsaG9zdC8=",
+        "CreateIndex": 17,
+        "ModifyIndex": 17
+    },
+    {
+        "LockIndex": 0,
+        "Key": "application/db/",
+        "Flags": 0,
+        "Value": null,
+        "CreateIndex": 13,
+        "ModifyIndex": 13
+    },
+    {
+        "LockIndex": 0,
+        "Key": "application/db/name",
+        "Flags": 0,
+        "Value": "ZGF0YWJhc2VfbmFtZQ==",
+        "CreateIndex": 19,
+        "ModifyIndex": 19
+    }
+]

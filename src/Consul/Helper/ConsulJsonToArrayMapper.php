@@ -10,9 +10,9 @@ final class ConsulJsonToArrayMapper
      * @param array $consulRecord
      * @return array
      */
-    public function map(array $consulRecord)
+    public static function map(array $consulRecord)
     {
-        return $this->mapDirectories(
+        return self::mapDirectories(
             $consulRecord['Key'],
             $consulRecord['Value']
         );
@@ -23,11 +23,9 @@ final class ConsulJsonToArrayMapper
      * @param string|null $value
      * @return array
      */
-    private function mapDirectories($key, $value = null)
+    private static function mapDirectories($key, $value = null)
     {
-        $dirs = explode('/', $key);
-        // get rid of last exploded item
-        $valueKey = array_pop($dirs);
+        list($dirs, $valueKey) = ConsulKeyParser::parseKey($key);
 
         $result  = [];
         $pointer = &$result;
