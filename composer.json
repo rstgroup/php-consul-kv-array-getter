@@ -32,5 +32,8 @@
             "type": "vcs",
             "url": "https://github.com/artospaj/consul-php-sdk"
         }
-    ]
+    ],
+    "scripts": {
+        "unit-tests": "phpunit --bootstrap=vendor/autoload.php tests/"
+    }
 }
