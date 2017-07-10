@@ -1,7 +1,7 @@
 <?php
 
 
-namespace RstGroup\PhpConsulConfigProvider;
+namespace RstGroup\PhpConsulKVArrayGetter;
 
 
 interface ConsulArrayGetterInterface

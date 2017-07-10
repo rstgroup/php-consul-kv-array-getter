@@ -19,7 +19,12 @@
     },
     "autoload": {
         "psr-4": {
-            "RstGroup\\PhpConsulConfigProvider\\": "src/"
+            "RstGroup\\PhpConsulKVArrayGetter\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RstGroup\\PhpConsulKVArrayGetter\\Tests\\": "tests/"
         }
     },
     "repositories": [

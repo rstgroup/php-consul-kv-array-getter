@@ -1,13 +1,13 @@
 <?php
 
 
-namespace RstGroup\PhpConsulConfigProvider\Tests\Consul;
+namespace RstGroup\PhpConsulKVArrayGetter\Tests\Consul;
 
 
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Psr7\Response;
 use PHPUnit\Framework\TestCase;
-use RstGroup\PhpConsulConfigProvider\Consul\ConsulArrayGetter;
+use RstGroup\PhpConsulKVArrayGetter\Consul\ConsulArrayGetter;
 use SensioLabs\Consul\Services\KV;
 
 

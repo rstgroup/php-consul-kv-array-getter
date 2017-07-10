@@ -1,11 +1,11 @@
 <?php
 
 
-namespace RstGroup\PhpConsulConfigProvider\Consul;
+namespace RstGroup\PhpConsulKVArrayGetter\Consul;
 
 
-use RstGroup\PhpConsulConfigProvider\ConsulArrayGetterInterface;
-use RstGroup\PhpConsulConfigProvider\Consul\Helper\ConsulJsonToArrayMapper;
+use RstGroup\PhpConsulKVArrayGetter\ConsulArrayGetterInterface;
+use RstGroup\PhpConsulKVArrayGetter\Consul\Helper\ConsulJsonToArrayMapper;
 use SensioLabs\Consul\ConsulResponse;
 use SensioLabs\Consul\Services\KVInterface;
 

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace RstGroup\PhpConsulConfigProvider\Consul\Helper;
+namespace RstGroup\PhpConsulKVArrayGetter\Consul\Helper;
 
 
 final class ConsulJsonToArrayMapper

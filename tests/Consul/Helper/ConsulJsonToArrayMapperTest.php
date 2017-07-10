@@ -1,11 +1,11 @@
 <?php
 
 
-namespace RstGroup\PhpConsulConfigProvider\Tests\Consul\Helper;
+namespace RstGroup\PhpConsulKVArrayGetter\Tests\Consul\Helper;
 
 
 use PHPUnit\Framework\TestCase;
-use RstGroup\PhpConsulConfigProvider\Consul\Helper\ConsulJsonToArrayMapper;
+use RstGroup\PhpConsulKVArrayGetter\Consul\Helper\ConsulJsonToArrayMapper;
 
 
 class ConsulJsonToArrayMapperTest extends TestCase
