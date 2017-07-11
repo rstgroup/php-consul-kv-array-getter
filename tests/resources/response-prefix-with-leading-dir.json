@@ -1,0 +1,26 @@
+[
+    {
+        "LockIndex": 0,
+        "Key": "application/fold",
+        "Flags": 0,
+        "Value": "dHJhbGFsYWxh",
+        "CreateIndex": 151,
+        "ModifyIndex": 151
+    },
+    {
+        "LockIndex": 0,
+        "Key": "application/folder/",
+        "Flags": 0,
+        "Value": null,
+        "CreateIndex": 145,
+        "ModifyIndex": 145
+    },
+    {
+        "LockIndex": 0,
+        "Key": "application/folder/xxx",
+        "Flags": 0,
+        "Value": "YWN4",
+        "CreateIndex": 146,
+        "ModifyIndex": 147
+    }
+]
