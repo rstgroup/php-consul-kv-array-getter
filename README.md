@@ -13,7 +13,7 @@ Firstly, you need to add repository to your `composer.json`:
     "repositories": [
         {
             "type": "vcs",
-            "url": "git@gitlab.trans-dev.loc:devops/php-consul-kv-array-getter.git"
+            "url": "https://github.com/rstgroup/php-consul-kv-array-getter"
         }
     ]
 }
