@@ -1,5 +1,7 @@
 # Consul KV Array Getter
 
+[![Build Status](https://travis-ci.org/rstgroup/php-consul-kv-array-getter.svg?branch=master)](https://travis-ci.org/rstgroup/php-consul-kv-array-getter)
+
 ## What does this library do?
 
 The library allows you to retrieve whole tree of properties from Consul's KV store. Retrieved data is grouped into
