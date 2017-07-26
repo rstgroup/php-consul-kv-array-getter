@@ -9,24 +9,11 @@ nested arrays.
 
 ## How to install it?
 
-Firstly, you need to add repository to your `composer.json`:
-```json
-{
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/rstgroup/php-consul-kv-array-getter"
-        }
-    ]
-}
-```
+Require the package by Composer:
 
-... and then:
 ```bash
 composer require rstgroup/php-consul-kv-array-getter
 ```
-
-BTW. Soon projects will be available via composer-proxy.
 
 ## How to use the library?
 
